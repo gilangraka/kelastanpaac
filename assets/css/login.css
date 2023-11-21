@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #f7f8fa;
+}
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+h2 {
+  font-size: 2em;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+form .input-box{
+  position: relative;
+  border-bottom: 3px solid #adadad;
+  margin: 30px 0;
+}
+.input-box {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+}
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box span::before{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #306998;
+  transition: .5s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+ top: -5px;
+ color: #306998;
+}
+
+.input-box input:focus ~ span::before,
+.input-box input:valid ~ span::before{
+  width: 100%;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 35px 0 5px;
+  color: #333;
+}
+.input-box i {
+  position: absolute;
+  right: 8px;
+  color: #333;
+  font-size: 1.2em;
+  top: 20px;
+}
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #306998;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 800;
+  align-items: center;
+  transition: 0.2s;
+}
+.btn-close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
