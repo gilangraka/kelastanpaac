@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 21 Nov 2023 pada 11.19
+-- Waktu pembuatan: 03 Jan 2024 pada 15.55
 -- Versi server: 10.6.15-MariaDB-cll-lve
--- Versi PHP: 8.1.16
+-- Versi PHP: 8.1.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,8 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id`, `judul`, `deskripsi`, `waktu_posting`) VALUES
-(3, 'Gayahsgsg', 'Jagzgxhxh', '2023-11-19 03:06:54');
+(3, 'Gayahsgsg', 'Jagzgxhxh', '2023-11-19 03:06:54'),
+(4, 'Hahagegsgg', 'Hagageg', '2023-11-30 03:51:03');
 
 -- --------------------------------------------------------
 
@@ -99,7 +100,7 @@ INSERT INTO `mahasiswa` (`nim`, `foto`, `nama`, `gender`, `role`) VALUES
 ('33422208', '33422208.png', 'Gilang Raka Ramadhan', 'L', 'Mahasiswa'),
 ('33422209', '33422209.png', 'Isma Tania Rahmawati', 'P', 'Mahasiswa'),
 ('33422210', '33422210.png', 'Jhoy Marice Septiani Ohee', 'P', 'Mahasiswa'),
-('33422211', '33422211.png', 'Krisna Desta Pradana', 'P', 'Mahasiswa'),
+('33422211', '33422211.png', 'Krisna Desta Pradana', 'L', 'Mahasiswa'),
 ('33422212', '33422212.png', 'Mochammad Anda Fadholli', 'L', 'Mahasiswa'),
 ('33422213', '33422213.png', 'Muhammad Fayakun', 'L', 'Mahasiswa'),
 ('33422214', '33422214.png', 'Muhammad Raafi Hariyadi', 'L', 'Mahasiswa'),
@@ -128,7 +129,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`) VALUES
-('admin', 'admin');
+('admin', 'admin'),
+('gilangraka', 'gilangraka');
 
 --
 -- Indexes for dumped tables
@@ -169,7 +171,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `berita_gambar`
